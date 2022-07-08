@@ -39,6 +39,7 @@ export default ({ children }) => {
           </a>
         </nav>
       </header>
+      <script></script>
       {children}
     </Fragment>
   );
