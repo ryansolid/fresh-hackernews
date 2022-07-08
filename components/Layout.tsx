@@ -39,7 +39,7 @@ export default ({ children }) => {
           </a>
         </nav>
       </header>
-      <script></script>
+      <script>{`const el = document.body;`}</script>
       {children}
     </Fragment>
   );
