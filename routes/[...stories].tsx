@@ -21,9 +21,10 @@ const mapStories = {
 };
 
 export const handler: Handlers<StoriesData> = {
-  async GET(_, ctx) {
+  async GET(req, ctx) {
+    const url = new URL(req.url);
+    const page = +(url.searchParams.get('page') || 1);
     const { stories: storyParam } = ctx.params;
-    const page = 1;
     const type =  storyParam || "top";
 
     const stories = await fetchAPI(

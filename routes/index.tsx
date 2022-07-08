@@ -21,16 +21,14 @@ const mapStories = {
 };
 
 export const handler: Handlers<StoriesData> = {
-  async GET(_, ctx) {
-    const page = 1;
+  async GET(req, ctx) {
+    const url = new URL(req.url);
+    const page = +(url.searchParams.get('page') || 1);
     const type =  "top";
 
     const stories = await fetchAPI(
       `${mapStories[type as keyof mapStories]}?page=${page}`
     );
-    // if (resp.status === 404) {
-    //   return ctx.render(null);
-    // }
     return ctx.render({ page, type, stories });
   },
 };
