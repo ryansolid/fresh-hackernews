@@ -28,7 +28,7 @@ a {
   padding: 15px 5px;
 }
 .header a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.802);
   line-height: 24px;
   transition: color 0.15s ease;
   display: inline-block;
@@ -38,17 +38,17 @@ a {
   margin-right: 1.8em;
 }
 .header a:hover {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.5);;
 }
 .header a.active {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.5);;
   font-weight: 400;
 }
 .header a:nth-child(6) {
   margin-right: 0;
 }
 .header .github {
-  color: #fff;
+  color: #000;
   font-size: 0.9em;
   margin: 0;
   float: right;
