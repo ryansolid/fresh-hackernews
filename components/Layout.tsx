@@ -6,9 +6,7 @@ export default ({ children }) => {
   return (
     <Fragment>
       <Head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Astro Hackernews" />
+        <meta name="description" content="Fresh Hackernews" />
         <link rel="stylesheet" href="/global.css" />
         <title>Fresh - Hacker News</title>
       </Head>
